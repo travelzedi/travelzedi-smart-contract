@@ -1,3 +1,6 @@
-Hello World
+# TravelZedi Smart Contracts!
+Homepage (http://travelzedi.com)
 
-TravelZedi
+===================
+
+<img src="assets/mobile-header.png" />
