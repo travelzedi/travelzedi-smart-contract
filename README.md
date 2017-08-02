@@ -7,10 +7,10 @@ Homepage (http://travelzedi.com)
 
 Info
 -------------
-Contract Address: 0xA8Ff79ae4D596341915C93DFC26fC3B5BC96b743
-Name: TravelZedi Token
-Total Supply: 500,000,000 ZEDI
-Symbol: ZEDI
+- Contract Address: 0xA8Ff79ae4D596341915C93DFC26fC3B5BC96b743
+- Name: TravelZedi Token
+- Total Supply: 500,000,000 ZEDI
+- Symbol: ZEDI
 
 ABI
 -------------
