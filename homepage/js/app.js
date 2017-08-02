@@ -1,4 +1,45 @@
+function calcAllSocial () {
+	var sumWidth = $("#contact .all-social").width();
+	var sumIconWidth = 0;
+	$("#contact .all-social img").each(function (key,val) {
+		sumIconWidth += $(val).width();
+	});
+	var distance = (sumWidth - sumIconWidth) / ($("#contact .all-social img").length - 1);
+	$("#contact .all-social img").css("margin-right", (distance - 4) + 'px');
+	$("#contact .all-social a:last-child img").css("margin-right", "0px");
+}
+
 $(document).ready(function () {
+
+	calcAllSocial();
+
+	$(".mobile-menu").click(function () {
+		var icon = $(this).find("i");
+		var height = $(".mobile-menu-content").height();
+		if(height == 0) {
+			$(".mobile-menu-content").css("height", "244px");
+			icon.attr("class", "ion ion-close");
+		} else {
+			$(".mobile-menu-content").css("height", "0px");
+			icon.attr("class", "ion ion-navicon");
+		}
+	});
+
+	$(window).scroll(function () {
+		if($(this).scrollTop() > 150) {
+			$("nav").addClass("nav-fixed");
+		} else {
+			$("nav").removeClass("nav-fixed");
+		}
+	});
+
+	$('nav a').click(function(){
+	    var top = $('body').find($(this).attr('href')).offset().top;
+	    $('html, body').animate({
+	        scrollTop: top - 72
+	    },500, 'swing');
+	    return false;
+	});
 
 	$(".drop-down").click(function() {
 		var parent = $(this).parent();

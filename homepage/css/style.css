@@ -50,29 +50,31 @@
 	background: url(../images/header-bg.png);
 	background-size: cover;
 	padding: 30px 0px;
+	padding-top: 0px;
 	padding-bottom: 50px;
 }
 
 nav {
-	float: right;
+	padding-top: 30px;
 }
 
-nav ul {
+nav .desktop-menu {
+	float: right;
 	list-style: none;
 }
 
-nav li {
+nav .desktop-menu li {
 	float: left;
 	margin-right: 50px;
 	margin-top: 25px;
 }
 
-nav li:last-child {
+nav .desktop-menu li:last-child {
 	margin-top: 10px;
 	margin-right: 0px;
 }
 
-nav li a {
+nav .desktop-menu li a {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 300;
@@ -80,10 +82,43 @@ nav li a {
 	padding-top: 15px;
 }
 
-nav li a:hover {
+nav .desktop-menu li a:visited {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+nav .desktop-menu li a:hover {
 	color: #fff;
 	letter-spacing: 1px;
 	text-decoration: none;
+}
+
+.nav-fixed {
+	padding-top: 0px;
+	position: fixed;
+	background: #09B1A8;
+	width: 100%;
+	z-index: 10;
+}
+
+nav .mobile-menu {
+	float: right;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 48px;
+	margin-top: 12px;
+	display: none;
+}
+
+.mobile-menu-content {
+	display: none;
+}
+
+.nav-fixed .logo {
+	width: 60px;
+    margin-top: 5px;
 }
 
 #header .description {
@@ -525,14 +560,6 @@ nav li a:hover {
 	margin-bottom: 50px;
 }
 
-#contact .all-social img {
-	margin-right: 75px;
-}
-
-#contact .all-social a:last-child img{
-	margin-right: 0px;
-}
-
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
 }
@@ -673,6 +700,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62d3c0', end
 #buyToken .purchase .note {
 	padding-left: 30px;
 	margin-top: 10px;
+	font-size: 12px;
 }
 
 #buyToken .purchase2 .watch-tutorial {
@@ -707,4 +735,149 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62d3c0', end
 
 #buyToken .sale-lots li {
 	text-align: center;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 768px) {
+	/* HEADER */
+	#header {
+		background-size: inherit;
+	}
+	#header nav .desktop-menu li {
+		display: none;
+	}
+
+	nav .desktop-menu li:last-child {
+		margin-top: 24px;
+	}
+
+	nav .mobile-menu {
+		display: inline-block;
+	}
+
+	.nav-fixed .desktop-menu li:last-child {
+		margin-top: 10px;
+	}
+
+	.nav-fixed .mobile-menu {
+		margin-top: 0px;
+	}
+
+	.mobile-menu-content {
+		display: block;
+		margin-top: 10px;
+		background: #09b1a8;
+		color: #fff;
+		height: 0px;
+		overflow: hidden;
+		-webkit-transition: all .3s ease;
+		   -moz-transition: all .3s ease;
+		    -ms-transition: all .3s ease;
+		     -o-transition: all .3s ease;
+		        transition: all .3s ease;
+	}
+
+	.mobile-menu-content ul {
+		margin-bottom: 0px;
+	}
+
+	.mobile-menu-content ul li {
+		padding: 10px 0px;
+		padding-left: 15px;
+		border-bottom: 1px solid #fff;
+	}
+
+	.mobile-menu-content ul li:last-child {
+		border-bottom: 0px;
+	}
+
+	.mobile-menu-content ul li a {
+		color: #fff;
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	#header nav .desktop-menu .show-in-mobile {
+		display: block;
+	}
+
+	#header .description {
+		font-size: 18px;
+	}
+
+	#header .app-screenshot {
+		width: 100%;
+		margin-top: 0px;
+		float: none;
+	}
+
+	#header .download {
+		margin-top: 0px;
+		float: none;
+	}
+
+	#header .download img:first-child {
+		margin-right: 0px;
+	}
+
+	/* OUR VISION */
+	#our-vision .vision img {
+		margin-bottom: 20px;
+	}
+	
+	/* TOKEN INFO */
+	#token .token-detail {
+		margin-top: 20px;
+	}
+
+	#token .chart-img {
+		width: 100%;
+	}
+
+	#token .lot,
+	#token .dot,
+	#token .limit {
+		display: none;
+	}
+
+	#token .timeline .timeline-bg .ran {
+		font-size: 10px;
+	}
+
+	#token .timeline {
+		margin-bottom: 50px;
+	}
+
+	/* TIMELINE */
+	#timeline .box {
+		width: 100%;
+		margin-bottom: 20px;
+		background: rgba(0,0,0,0.4);
+	}
+
+	#timeline .box .line,
+	#timeline .box .dot,
+	#timeline .box .arrow {
+		display: none;
+	}
+
+	/* FAQ */
+	#faq .question {
+		margin-right: 0px;
+	}
+
+	/* CONTACT */
+	#contact .contact-form,
+	#contact .all-social {
+		width: 100%;
+	}
+
+	/* MODAL */
+	#buyToken .modal-dialog {
+		width: 95%;
+	}
+
+	#buyToken .purchase .info {
+		width: 57%;
+	}
 }

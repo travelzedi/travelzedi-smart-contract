@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TrevelZedi - One of the leading flight and hotel booking platforms in the world</title>
+	<title>TravelZedi - One of the leading flight and hotel booking platforms in the world</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -19,18 +19,30 @@
 </head>
 <body>
 	<section id="header">
-		<div class="container">
-			<img src="images/logo.png" alt="logo">
-			<nav>
-				<ul>
+		<nav>
+			<div class="container">
+				<a href="http://travelzedi.com"><img class="logo" src="images/logo.png" alt="logo"></a>
+				<button class="mobile-menu"><i class="ion ion-navicon"></i></button>
+				<ul class="desktop-menu">
 					<li><a href="#">White Paper</a></li>
-					<li><a href="#">What is Zedi Token?</a></li>
-					<li><a href="#">Timeline</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#" class="btn btn-buy-token" data-toggle="modal" data-target="#buyToken">Buy Token</a></li>
+					<li><a href="#token">What is Zedi Token?</a></li>
+					<li><a href="#timeline">Timeline</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li class="show-in-mobile"><a href="#" class="btn btn-buy-token" data-toggle="modal" data-target="#buyToken">Buy Token</a></li>
 				</ul>
-			</nav>
+			</div>
+			<div class="mobile-menu-content">
+				<ul class="list-unstyled">
+					<li><a href="#">White Paper</a></li>
+					<li><a href="#token">What is Zedi Token?</a></li>
+					<li><a href="#timeline">Timeline</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
 					<p class="description"><b>TravelZedi</b> is one of the leading flight and hotel booking platforms in the world. We work hard to provide our customers with the cheapest hotel and flight rates every day!</p>
@@ -38,7 +50,7 @@
 					</div> -->
 				</div>
 				<div class="col-md-6 text-center">
-					<img class="app-screenshot animated slideInRight" src="images/mobile-header.png">
+					<img class="app-screenshot" src="images/mobile-header.png">
 					<div class="download">
 						<img class="animated slideInUp" data-animate-delay="600" src="images/download-ios.png">
 						<img class="animated slideInUp" data-animate-delay="600" src="images/download-android.png">
@@ -53,7 +65,7 @@
 				<h3>What is Zedi Token?</h3>
 				<img src="images/title-line.png">
 			</div>
-			<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			<p class="description">The ZEDI Token is a cryptocurrency based on the Ethereum blockchain. ZEDI is an open source, global payment network that is fully decentralized without any central authorities. ZEDI is created to become the cryptocurrency used to pay for transportation and accommodation booking websites.</p>
 			<div class="row">
 				<div class="col-md-6">
 					<ul class="token-detail list-unstyled">
@@ -93,24 +105,28 @@
 	<section id="our-vision">
 		<div class="container">
 			<h1 class="title">OUR VISION</h1>
-			<p class="description">Rất nhiều cryptocurrencies đã được tạo ra trên thị trường. Chủ yếu là các cryptocurrencies được cung cấp để sử dụng trong một dịch vụ hoặc sản phẩm. Vậy ZEDI có gì khác biệt và những đồng tương đương?</p>
+			<p class="description">ZEDI is created with the purpose of providing an alternative payment method for transportation and accommodation
+			booking websites. By using ZEDI, the booking process would be simplified and more efficient for both prividers and consumers.</p>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="vision vision-1">
 						<img src="images/vision-1.png" alt="">
-						<p>Đặt vé máy bay và đặt vé khách sạn trên toàn thế giới</p>
+						<p>Transportation and accommodation booking all around the world</p>
+						<div style="clear: both;"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="vision vision-2">
 						<img src="images/vision-2.png" alt="">
-						<p>Thanh toán trực tuyến với Zedi Token</p>
+						<p>Instantly Transaction</p>
+						<div style="clear: both;"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="vision vision-3">
 						<img src="images/vision-3.png" alt="">
-						<p>Giao dịch tức thời và bảo mật cao</p>
+						<p>Private and secured</p>
+						<div style="clear: both;"></div>
 					</div>
 				</div>
 			</div>
@@ -121,11 +137,14 @@
 			<h1>TIMELINE</h1>
 			<div class="box box-left pull-left animation-element" data-animated="slideInUp">
 				<div class="title">
-					<h3>VALIDATION AND PILOT</h3>
-					<p class="start-date pull-right">December 2016</p>
+					<h3>3RD QUARTER 2017</h3>
+					<p class="start-date pull-right">2017</p>
 				</div>
 				<div class="content">
-					Scope: 100 migrant workers, 850,000 Crypto ZEDI Successful transfers confirmed between Thailand and Myanmar (eqv. $24,000)
+					-	Early August: presale period<br>
+					-	Mid August: Initial Coin Offering(ICO) period<br>
+					-	Late August: Initial Public Offering(IPO) period<br>
+					-	Working on ZEDI and introducing ZEDI on accommodation websites such as Airbnb.com, Only-apartments.com, Booking.com, Hotelscombined.com, Expedia.com, Agoda.com<br>
 				</div>
 				<div class="arrow"></div>
 				<div class="dot"></div>
@@ -134,11 +153,11 @@
 			<div style="clear: both"></div>
 			<div class="box box-right pull-right animation-element" data-animated="slideInUp" data-animate-delay="200">
 				<div class="title">
-					<h3>STRATEGY AND PLANNING</h3>
-					<p class="start-date pull-right">December 2016</p>
+					<h3>4TH QUARTER 2017</h3>
+					<p class="start-date pull-right">2017</p>
 				</div>
 				<div class="content">
-					Legal structure and frameworkStrategic PartnershipsMarketing and PREstablish EVX community Advisory Board SelectionToken Sale Platform development and testingDevelopment of EVX token
+					Working on ZEDI and introducing ZEDI on Rome2rio.com,  Goeuro.com, Skyscanner,  Momondo, Seat61.com, Rail Europe, B-europe.com, Loco2.com, Captaintrain.com, Busradar.com.
 				</div>
 				<div class="arrow"></div>
 				<div class="dot"></div>
@@ -147,17 +166,12 @@
 			<div style="clear: both"></div>
 			<div class="box box-left pull-left animation-element" data-animated="slideInUp" data-animate-delay="400">
 				<div class="title">
-					<h3>OPEN FOR BUSINESS</h3>
-					<p class="start-date pull-right">December 2016</p>
+					<h3>1ST QUARTER 2018</h3>
+					<p class="start-date pull-right">2018</p>
 				</div>
 				<div class="content">
-					Regulatory Framework Compliance Execution Plan
-					License Application for lending and currency exchange
-					Establish Partnerships with banks and Liquidity Providers.
-					Token Sale Event, listing EVX on exchanges
-					Talent Recruitment for Key positions
-					Product Portfolio Roadmap Execution Plan Official Launch of Myanmar, Russia and Thailand Markets
-					EVX community development
+					-	Working on ZEDI and introducing ZEDI on greyhound.com, amtrak.com, kayak.com, Traveloka.com.<br>
+					-	Testing Travel ZEDI application
 				</div>
 				<div class="arrow"></div>
 				<div class="dot"></div>
@@ -166,17 +180,12 @@
 			<div style="clear: both"></div>
 			<div class="box box-right pull-right animation-element" data-animated="slideInUp" data-animate-delay="600">
 				<div class="title">
-					<h3>PRODUCT/MARKETS GRID</h3>
-					<p class="start-date pull-right">December 2016</p>
+					<h3>2ND QUARTER 2018</h3>
+					<p class="start-date pull-right">2018</p>
 				</div>
 				<div class="content">
-					Launch of Remittance and Microlending in 3 Asian markets
-					New product features validation and integration
-					Commercialization Campaign of Cryptocash  Business growth opportunities in Middle East and Europe
-					Sales and Marketing Campaign Strategy
-					Regulatory Framework Compliance
-					Secure Technical Partnerships
-					First quarterly EVX token buy back
+					-	Working on ZEDI and introducing ZEDI on Eurolines, Megabus, Student Agency Bus, IC Bus<br>
+					-	Travel ZEDI BETA realease
 				</div>
 				<div class="arrow"></div>
 				<div class="dot"></div>
@@ -185,11 +194,11 @@
 			<div style="clear: both"></div>
 			<div class="box box-left pull-left animation-element" data-animated="slideInUp" data-animate-delay="800">
 				<div class="title">
-					<h3>PUBLISH MOBILE APPLICATION</h3>
-					<p class="start-date pull-right">December 2016</p>
+					<h3>3RD QUARTER 2018</h3>
+					<p class="start-date pull-right">2018</p>
 				</div>
 				<div class="content">
-					It's time for you to move on to TravelZedi App! Experience the easiest and fastest way of booking cheap flights and hotels in less than one minute.
+					Introducing Travel ZEDI application
 				</div>
 				<div class="arrow"></div>
 				<div class="dot"></div>
@@ -418,7 +427,7 @@
 			     			<input type="text" id="create-address" name="create-address" value="0x7db29B083dD9126b562b0555312bE0aE864ca4e1">
 			     			<button class="btn btn-copy" data-clipboard-target="#create-address"><i class="ion ion-ios-copy"></i> COPY</button>
 			     		</div>
-			     		<small class="note">* When you transfer ETH to this wallet address. Auto system will send ZEDI to you</small>
+			     		<div class="note">* When you transfer ETH to this wallet address. Auto system will send ZEDI to you</div>
 			     	</div>
 			     	<div class="purchase2">
 			     		<h4 class="title drop-down"><span class="circle"></span> Purchase with MyEtherWallet.com : <i class="ion ion-arrow-down-b pull-right" style="margin-right: 25px;margin-top: 0px;"></i></h4>
