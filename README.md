@@ -11,6 +11,14 @@ Token Info
 - Name: TravelZedi Token
 - Total Supply: 500,000,000 ZEDI
 - Symbol: ZEDI
+- Decimal: 18
+
+Token Tutorials
+-------------
+- [Buy Token](https://www.youtube.com/)
+- [Buy Token with MyEtherWallet](https://www.youtube.com/)
+- [Check Balance](https://www.youtube.com/)
+- [Transfer Token](https://www.youtube.com/)
 
 Token ABI
 -------------
