@@ -5,14 +5,14 @@ Homepage (http://travelzedi.com)
 
 <img src="assets/mobile-header.png" />
 
-Info
+Token Info
 -------------
 - Contract Address: [0xA8Ff79ae4D596341915C93DFC26fC3B5BC96b743](https://etherscan.io/address/0xa8ff79ae4d596341915c93dfc26fc3b5bc96b743)
 - Name: TravelZedi Token
 - Total Supply: 500,000,000 ZEDI
 - Symbol: ZEDI
 
-ABI
+Token ABI
 -------------
 ```
 [
