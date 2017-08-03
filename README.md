@@ -14,12 +14,9 @@ Token Info
 - Symbol: ZEDI
 - Decimal: 18
 
-Token Tutorials
+Tutorial
 -------------
-- [Buy Token](https://www.youtube.com/)
-- [Buy Token with MyEtherWallet](https://www.youtube.com/)
-- [Check Balance](https://www.youtube.com/)
-- [Transfer Token](https://www.youtube.com/)
+- [View on Youtube](https://www.youtube.com/)
 
 Token ABI
 -------------
